@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이더리움-파워볼</title>
+
+    <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .img {width: 100%;}
+        .clear {clear:both;}
+        .clear:after {clear:both; content:""; display: block;}
+        .box {border: 1px solid #ffb400; border-radius: 10px; box-sizing: border-box;}
+        input:-internal-autofill-selected {
+        background: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        }
+
+
+        .log_wrap {position: absolute; left: 50%; top: 40%; transform: translate(-50%, -40%); width: 300px; height: 400px; padding:  23px 25px;}
+        .logo {display: block; max-width: 100px; margin: 0 auto 16px;}
+        .heading {font-size: 18px; font-weight: 500; color: #ffd267; text-align: center; margin-bottom: 14px;}
+
+        /*************************
+                    form
+        **************************/
+        form.logFrom > input {width: 100%; background: transparent; font-size: 17px; color: #b3b3b3; padding: 17px 21px; box-sizing: border-box; outline: none;}
+        form.logFrom > input:first-child {margin-bottom: 8px;}
+
+        .btn-wrap {width: 100%; margin-top: 30px; margin-bottom: 30px;}
+        .btn-wrap > div {float: left; width: 48%; background: #ffb400; font-size: 16px; font-weight: bold; color: #292b2d; text-align: center; padding: 14px 0; cursor: pointer;}
+        .btn-wrap > .join {margin-right: 4%;}
+
+        .find-wrap > li {float: left; width: 48%; font-size: 14px; color: #b3b3b3; text-align: center; cursor: pointer;}
+        .find-wrap > li:hover {text-decoration: underline;}
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- wrap -->
+    <div id="wrap">
+
+        <div class="log_wrap box">
+            <div class="logo"><img src="../image/logo.png" alt="logo" class="img"></div>
+            <p class="heading">로그인</p>
+            
+            <form class="logFrom">
+                <input type="text" name="name" class="box" id="" placeholder="아이디 (이메일)" data-constraints="">
+                <input type="password" name="password" class="box" id="" placeholder="비밀번호" data-constraints="">
+            </form>
+
+            <div class="btn-wrap clear">
+                <div class="join box" onclick="window.open('/public/form/terms.html');">회원가입</div>
+                <div class="login box">로그인</div>
+            </div>
+
+            <ul class="find-wrap clear">
+                <li class="idFind">ID 찾기</li>
+                <li class="pswFind">Password 찾기</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //wrap -->
+
+
+<script src="../js/jquery-1.11.3.min.js" ></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+</body>
+
+
+
+</html>

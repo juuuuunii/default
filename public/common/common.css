@@ -1,0 +1,92 @@
+/*base*/
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd{margin:0; padding:0;}
+body{font:normal 12px "맑은고딕", Malgun Gothic, serif}
+ul{list-style:none}
+img{border:0;vertical-align:top;}
+a{text-decoration:none;color:#000;}
+table{border-collapse:collapse}
+
+body{background: #000; color:#ffd267 }
+a{color:#fff}
+#wrap{width:100%; height: 100%; overflow: hidden}
+
+header .top-head-wrap{width: 100%;
+}
+
+.top-head{width: 1200px;
+    height:50px;
+    margin: 0 auto;
+    color: #fff}
+
+.top-head>ul{float: right;position: relative}
+.top-head>ul>li{float: left; 
+    font-size:14px;
+    line-height: 50px;
+    margin-left:40px;}
+.top-head>ul>li:nth-child(3){margin-right: 25px;}
+.top-head>ul>li:nth-child(3) img{margin-top: 15px; margin-right: 15px;}
+
+.top-head>ul>li>ul{position: absolute;
+    top:50px; 
+    right: 0px;
+    width: 120px; 
+    background: #9d9d9d;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box; 
+    z-index: 2;
+    display: none;
+ }
+
+
+.top-head>ul>li>ul>li>a{color: #000; font-weight: normal;line-height:1.5;}
+
+/*메뉴*/
+.nav-wrap{width: 100%;
+    background: #1e2022;
+    border: 2px solid #f4ad01}
+nav{width: 1200px;
+    height: 100px;
+    margin: 0 auto;}
+
+nav .gnb>li{float:left;
+    margin-left:70px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    width: 120px;}
+
+nav .gnb>li:nth-child(1){margin-top:25px;height: 54px; line-height: normal; margin-left: 5px;}
+
+nav .gnb>li:nth-child(4){margin-left: 383px;width: 120px;}
+
+
+.underline{width: 0%; height: 4px; margin-top: -30px;
+     background: gold; display: block;transition: all 0.3s}
+
+nav .gnb>li:hover .underline{width: 101%}
+
+
+
+/*서브메뉴*/
+nav .gnb li{position: relative}
+.gnb ul{position: absolute;
+    top: 100px; 
+    width: 130px; 
+    background: #9d9d9d;
+    line-height:2;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box; 
+    display:none}
+.gnb ul li a{color: #000; font-weight: normal;}
+
+.gnb ul li{transition: 0.3s;}
+.gnb ul li:hover{background: #ffd267}
+
+.sub-menu-1{height: 111px;}
+.sub-menu-2{height:142px;}
